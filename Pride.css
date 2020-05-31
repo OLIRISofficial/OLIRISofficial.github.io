@@ -1,0 +1,1 @@
+.Logo{background-clip:text;-webkit-background-clip:text;background-image:url(SRC/IMG/Pride.png);animation:werk 2s linear infinite;transition:all .2s ease}#waveform{background:url(SRC/IMG/WaveformPride.png)}.Logo:hover{color:transparent}@keyframes werk{from{background-position-x:0}to{background-position-x:100%}}
