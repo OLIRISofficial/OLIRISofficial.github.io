@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>OLIRIS | Blog</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Pride.css">
+    <meta name="title" content="OLIRIS | Blog">
+    <meta name="description" content="An Independent Game And Software Development Company.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://olir.is/">
+    <meta property="og:title" content="OLIRIS | Blog">
+    <meta property="og:description" content="An Independent Game And Software Development Company.">
+    <meta property="og:image" content="/SRC/IMG/Meta.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://olir.is/">
+    <meta property="twitter:title" content="OLIRIS | Blog">
+    <meta property="twitter:description" content="An Independent Game And Software Development Company.">
+    <meta property="twitter:image" content="/SRC/IMG/Meta.png">
+    <script SRC="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/SRC/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/SRC/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/SRC/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/SRC/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/SRC/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/SRC/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/SRC/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/SRC/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/SRC/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/SRC/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/SRC/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/SRC/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="/SRC/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+  </head>
+  <body>
+	  <nav>
+		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
+            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+	   <a href="/"><h1 class="Logo grow">OLIRIS</h1></a>
+	<ul class="icons">
+	   	<li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
+	</ul>
+    </nav>
+<div id="search">
+	<input type="text" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+    </div>
+<div id="mobilenav">
+	<div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+</div>
+
+<main class="notmargin">
+<section>
+    <div class="Posts">
+  
+      <h2><a href="/2020/06/06/My-Journey-Of-Creating-OLIRIS.html">My Journey Of Creating OLIRIS</a></h2>
+      <h5>2020-06-06 16:00:00 +0300</h5> 
+      <p>Welcome To OLIRIS Everyone. This Is Me The Creator Of This Site And In This Post I Would Like To Share My Thoughts On My Journey Of Creating OLIRIS.</p>
+
+      <a href="/2020/06/06/My-Journey-Of-Creating-OLIRIS.html"><h6>Continue Reading ⟶</h6></a>
+</div>
+  
+    </div>
+    <div class="rss">
+	<h3>Do You Have A RSS Reader ?</h3>
+	<p>Subscribe <a href="/feed.xml">via RSS</a></p>
+</div>	
+</section>
+</main>
+      </body>
+       <script>
+		var searching = false;var openednav = false;
+	var sjs = SimpleJekyllSearch({
+ 		 searchInput: document.getElementById('search-input'),
+ 		 resultsContainer: document.getElementById('results-container'),
+ 		 json: '/search.json'
+	})
+	function OpenSearch(){
+		searching = !searching;
+		openednav= !openednav;
+		document.getElementById('mobilenav').classList.remove('on');
+		document.getElementById('search').classList.toggle('on');
+		if(searching) {
+			document.getElementsByTagName('body')[0].style.overflow = "hidden";
+		}else{
+			document.getElementsByTagName('body')[0].style.overflow = "auto";
+		}
+	}
+function OpenMobileMenu(){
+        openednav= !openednav;
+                searching = !searching;
+                document.getElementById('mobilenav').classList.toggle('on');
+                document.getElementById('search').classList.remove('on');
+                if(openednav) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+}
+
+      </script>
+</html>
