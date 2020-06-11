@@ -18,7 +18,7 @@
     <meta property="twitter:title" content="OLIRIS | Blog">
     <meta property="twitter:description" content="An Independent Game And Software Development Company.">
     <meta property="twitter:image" content="/SRC/IMG/Meta.png">
-    <script SRC="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
@@ -41,8 +41,8 @@
   <body>
 	  <nav>
 		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
-            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
-	   <a href="/"><h1 class="Logo grow">OLIRIS</h1></a>
+            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+	   <h1 class="Logo grow"><a href="/">OLIRIS</a></h1>
 	<ul class="icons">
 	   	<li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
 	</ul>
@@ -59,41 +59,46 @@
 <section>
     <div class="Posts">
   
-      <h2><a href="/2020/06/06/My-Journey-Of-Creating-OLIRIS.html">My Journey Of Creating OLIRIS</a></h2>
-      <h5>2020-06-06 16:00:00 +0300</h5> 
-      <p>Welcome To OLIRIS Everyone. This Is Me The Creator Of This Site And In This Post I Would Like To Share My Thoughts On My Journey Of Creating OLIRIS.</p>
+      <h2 class="scroll-effect scrolled-effect"><a href="/2020/06/06/MyJourneyOfCreatingOLIRIS.html">My Journey Of Creating OLIRIS</a></h2>
+      <h5 class="scroll-effect scrolled-effect">06 Jun 2020</h5> 
+      <p class="scroll-effect scrolled-effect">Welcome To <span class="Logo">OLIRIS </span> Everyone. This Is Me The Creator Of This Site And In This Post I Would Like To Share My Thoughts On My Journey Of Creating <span class="Logo">OLIRIS </span>.</p>
 
-      <a href="/2020/06/06/My-Journey-Of-Creating-OLIRIS.html"><h6>Continue Reading ⟶</h6></a>
-</div>
+      <a class="scroll-effect scrolled-effect" href="/2020/06/06/MyJourneyOfCreatingOLIRIS.html"><h6>Continue Reading ⟶</h6></a>
   
     </div>
-    <div class="rss">
+    <div class="rss scroll-effect scrolled-effect">
 	<h3>Do You Have A RSS Reader ?</h3>
 	<p>Subscribe <a href="/feed.xml">via RSS</a></p>
 </div>	
+	<div class="patreon scroll-effect scrolled-effect">
+		<h3>Would You Like To Play A Different Game Every Month ?</h3>
+		<a href="https://www.patreon.com/OLIRISofficial"><p>To Learn More Go To Patreon ⟶</p></a>
+	</div>
 </section>
 </main>
       </body>
        <script>
-		var searching = false;var openednav = false;
-	var sjs = SimpleJekyllSearch({
- 		 searchInput: document.getElementById('search-input'),
- 		 resultsContainer: document.getElementById('results-container'),
- 		 json: '/search.json'
-	})
-	function OpenSearch(){
-		searching = !searching;
-		openednav= !openednav;
-		document.getElementById('mobilenav').classList.remove('on');
-		document.getElementById('search').classList.toggle('on');
-		if(searching) {
-			document.getElementsByTagName('body')[0].style.overflow = "hidden";
-		}else{
-			document.getElementsByTagName('body')[0].style.overflow = "auto";
-		}
-	}
+	       var scrollelems=document.getElementsByClassName('scroll-effect');
+window.addEventListener("load", (event)=>{CreateObserver();check();}, false);function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5}; observer=new IntersectionObserver(EffectScroll, options);console.log(observer);for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}
+var searching = false;var openednav = false;
+        var sjs = SimpleJekyllSearch({
+                 searchInput: document.getElementById('search-input'),
+                 resultsContainer: document.getElementById('results-container'),
+                 json: '/search.json'
+        })
+        function OpenSearch(){
+                searching = !searching;
+	openednav= !openednav;
+                document.getElementById('search').classList.toggle('on');
+                document.getElementById('mobilenav').classList.remove('on');
+                if(searching) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+        }
 function OpenMobileMenu(){
-        openednav= !openednav;
+	openednav= !openednav;
                 searching = !searching;
                 document.getElementById('mobilenav').classList.toggle('on');
                 document.getElementById('search').classList.remove('on');
@@ -103,6 +108,5 @@ function OpenMobileMenu(){
                         document.getElementsByTagName('body')[0].style.overflow = "auto";
                 }
 }
-
       </script>
 </html>

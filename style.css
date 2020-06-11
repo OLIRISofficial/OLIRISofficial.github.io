@@ -147,6 +147,9 @@ nav a:focus{
     display: flex;width: 100%;
     flex-direction: column;padding:15px 15px;
 }
+.not-available{
+	color:red;
+}
 .nav-button li{
 	width:max-content;
     display: flex;flex-direction: row;align-items: center;
@@ -227,7 +230,18 @@ background:linear-gradient( to top, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.
 	--grenness:0;
 	--blueness:255;
         box-shadow: 0px 0.179392px 2.91013px rgba(var(--redness), var(--greenness), var(--blueness), 0.239667), 0px 0.407592px 6.61205px rgba(var(--redness), var(--greenness), var(--blueness), 0.348411), 0px 0.709396px 11.508px rgba(var(--redness), var(--greenness), var(--blueness), 0.429105), 0px 1.12694px 18.2815px rgba(var(--redness), var(--greenness), var(--blueness), 0.5), 0px 1.73878px 28.2069px rgba(var(--redness), var(--greenness), var(--blueness), 0.570895), 0px 2.71324px 44.0147px rgba(var(--redness), var(--greenness), var(--blueness), 0.651589), 0px 4.50439px 73.0713px rgba(var(--redness), var(--greenness), var(--blueness), 0.760333), 0px 9px 146px var(--primary-color);background-color:rgb(var(--redness),var(--greenness),var(--blueness));
-	margin:0 15px;
+	margin:0 0px;
+	text-align:center;
+	padding:15px;
+}
+
+.patreon{
+	--primary-color:#f96854;
+	--redness:249;
+	--grenness:104;
+	--blueness:84;
+        box-shadow: 0px 0.179392px 2.91013px rgba(var(--redness), var(--greenness), var(--blueness), 0.239667), 0px 0.407592px 6.61205px rgba(var(--redness), var(--greenness), var(--blueness), 0.348411), 0px 0.709396px 11.508px rgba(var(--redness), var(--greenness), var(--blueness), 0.429105), 0px 1.12694px 18.2815px rgba(var(--redness), var(--greenness), var(--blueness), 0.5), 0px 1.73878px 28.2069px rgba(var(--redness), var(--greenness), var(--blueness), 0.570895), 0px 2.71324px 44.0147px rgba(var(--redness), var(--greenness), var(--blueness), 0.651589), 0px 4.50439px 73.0713px rgba(var(--redness), var(--greenness), var(--blueness), 0.760333), 0px 9px 146px var(--primary-color);background-color:rgb(var(--redness),var(--greenness),var(--blueness));
+	margin-top:30px;
 	text-align:center;
 	padding:15px;
 }

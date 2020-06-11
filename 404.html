@@ -18,7 +18,7 @@
     <meta property="twitter:title" content="OLIRIS | Page not found">
     <meta property="twitter:description" content="An Independent Game And Software Development Company.">
     <meta property="twitter:image" content="/SRC/IMG/Meta.png">
-    <script SRC="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
@@ -41,8 +41,8 @@
   <body>
 	  <nav>
 		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
-		  <div onclick="OpenMenu()" id="nav-menu"> <a href="/"> <div class="nav-button"><li><img SRC="/SRC/Icons/Home.svg" >Home</li></div> </a><div class="nav-button"><a href="/Blog"><li><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div></a> <div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
-	   <a href="/"><h1 class="Logo grow">OLIRIS</h1></a>
+		  <div onclick="OpenMenu()" id="nav-menu"> <a href="/"> <div class="nav-button"><li><img SRC="/SRC/Icons/Home.svg" >Home</li></div> </a><div class="nav-button"><a href="/Blog"><li><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div></a> <div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+	   <h1 class="Logo grow"><a href="/">OLIRIS</a></h1>
 	   <ul class="icons">
 	   	<li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
 	   </ul>
@@ -66,27 +66,26 @@
 </div>
 
       </body>
-<script>
-		var searching = false;
-var openednav = false;
-	var sjs = SimpleJekyllSearch({
- 		 searchInput: document.getElementById('search-input'),
- 		 resultsContainer: document.getElementById('results-container'),
- 		 json: '/search.json'
-	})
-	function OpenSearch(){
-		searching = !searching;
-        openednav= !openednav;
-		document.getElementById('mobilenav').classList.remove('on');
-		document.getElementById('search').classList.toggle('on');
-		if(searching) {
-			document.getElementsByTagName('body')[0].style.overflow = "hidden";
-		}else{
-			document.getElementsByTagName('body')[0].style.overflow = "auto";
-		}
-	}
+      <script>
+      var searching = false;var openednav = false;
+        var sjs = SimpleJekyllSearch({
+                 searchInput: document.getElementById('search-input'),
+                 resultsContainer: document.getElementById('results-container'),
+                 json: '/search.json'
+        })
+        function OpenSearch(){
+                searching = !searching;
+	openednav= !openednav;
+                document.getElementById('search').classList.toggle('on');
+                document.getElementById('mobilenav').classList.remove('on');
+                if(searching) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+        }
 function OpenMobileMenu(){
-        openednav= !openednav;
+	openednav= !openednav;
                 searching = !searching;
                 document.getElementById('mobilenav').classList.toggle('on');
                 document.getElementById('search').classList.remove('on');

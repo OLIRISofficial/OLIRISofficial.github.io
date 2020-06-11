@@ -21,7 +21,7 @@
     <meta property="twitter:title" content="OLIRIS | Home">
     <meta property="twitter:description" content="An Independent Game And Software Development Company.">
     <meta property="twitter:image" content="SRC/IMG/Meta.png">
-    <script SRC="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> 
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> 
     <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="SRC/Favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="SRC/Favicons/apple-icon-60x60.png">
@@ -44,7 +44,7 @@
   <body id="body" class="Intro--is--on">
 	<nav>
 		<div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
-		<div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div>   <div class="nav-button"> <a href="/Blog/"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li> </a></div> <div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+		<div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div>   <div class="nav-button"> <a href="/Blog/"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li> </a></div> <div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
            <h1 class="Logo grow">OLIRIS</h1>
         <ul class="icons">
                 <li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
@@ -59,7 +59,7 @@
 <ul id="results-container"></ul>
     </div>
 <div id="mobilenav">
-<div class="nav-button"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div>   <div class="nav-button"> <a href="/Blog/"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li> </a></div> <div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+<div class="nav-button"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div>   <div class="nav-button"> <a href="/Blog/"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li> </a></div> <div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
 </div>
 
 
@@ -71,10 +71,9 @@
       <div class="Shadow-to-top"></div>
       <section id="About">
         <p class="scroll-effect scrolled-effect">Let's Get To Know Each Other</p>
-        <h4 class="scroll-effect scrolled-effect"style="margin-top: 0px;">Hello <span style="font-family:Noto Emoji;">👋</span> I Am A Self-Taught Game <span style="font-family:Noto Emoji;">🎮</span> And Software<span style="font-family:Noto Emoji;">💾</span> Developer. I'm Currently Focused On 2 Of My Games That I've Planned To Release And Creating 1 Game Every Month For My Patrons.Inspired By <a href="https://sokpop.co/#home">Sokpop Collective</a></h4>
+        <h4 class="scroll-effect scrolled-effect"style="margin-top: 0px;">Hello <span style="font-family:Noto Emoji;">👋</span> I Am A Self-Taught Game <span style="font-family:Noto Emoji;">🎮</span> And Software<span style="font-family:Noto Emoji;">💾</span> Developer. I'm Currently Focused On 2 Of My Games That I've Planned To Release And Creating 1 Game Every Month For My Patrons. Inspired By <a href="https://sokpop.co/#home">Sokpop Collective</a></h4>
         <h4 class="scroll-effect scrolled-effect">And I Support <a href="https://www.semplice.com/independent">Being Independent And Bootstrapped</a></h4>
         <p class="scroll-effect scrolled-effect">You Can Also Find <span class="Logo">OLIRIS</span> On :<a href="https://twitter.com/OLIRISofficial">Twitter</a><a href="https://www.youtube.com/channel/UCz_BoWUaIT_cjCUKuFifW_Q">YouTube</a><a href="https://www.patreon.com/OLIRISofficial">Patreon</a><a href="https://oliris.itch.io/">Itch.io</a></p>
-        <p class="scroll-effect scrolled-effect" style="color:red;text-align: center;">Please Know That I Haven't Finish This Website</p>
       </section>
       <section class="Creation" id="listenLoad" style="background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(226,0,0,1) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(226,0,0,1))); background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(226,0,0,1) 100%); background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(226,0,0,1) 100%); background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(226,0,0,1) 100%); background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(226,0,0,1) 100%);">
         <h6 class="scroll-effect scrolled-effect">First Person/Third Person RPG Game</h6>
@@ -88,13 +87,28 @@
         <h6 class="scroll-effect scrolled-effect">An Assetless Audio Adventure Game</h6>
         <img class="scroll-effect scrolled-effect"SRC="SRC/IMG/ICantSee.svg" alt="I Can't See"><a href="https://oliris.itch.io/i-cant-see" class="scroll-effect xs-txt scrolled-effect grow btn">Play Now</a> 
       </section>
-      <section class="Creation"style="background: -moz-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 100%);background: -webkit-gradient(left top, left bottom, color-stop(10%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,1)));background: -webkit-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 100%);background: -o-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 100%);background: -ms-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 100%);background: linear-gradient(to bottom, rgba(0,0,0,1) 10%, rgba(255,255,255,1) 100%);">
-        <h4 class="scroll-effect scrolled-effect"style="text-align:center;color:black;grid-column:span 3;">Rest Of The Website Is Still Under Development.</h4>
+      <section>
+        <h4 class="scroll-effect scrolled-effect"style="text-align:center;color:black;color:white;">Recently I Wrote</h4>
+	<div class="Posts">
+
+      <h2 class="scroll-effect scrolled-effect"><a href="/2020/06/06/My-Journey-Of-Creating-OLIRIS.html">My Journey Of Creating OLIRIS</a></h2>
+      <h5 class="scroll-effect scrolled-effect">06 Jun 2020</h5>
+      <p class="scroll-effect scrolled-effect">Welcome To OLIRIS Everyone. This Is Me The Creator Of This Site And In This Post I Would Like To Share My Thoughts On My Journey Of Creating OLIRIS.</p>
+    </div>
+    <div class="rss scroll-effect scrolled-effect">
+        <h3>Do You Have A RSS Reader ?</h3>
+        <p>Subscribe <a href="/feed.xml">via RSS</a></p>
+</div>
+
+	<div class="patreon scroll-effect scrolled-effect">
+                <h3>Would You Like To Play A Different Game Every Month ?</h3>
+		<a href="https://www.patreon.com/OLIRISofficial"><p>To Learn More Go To Patreon ⟶</p></a>
+        </div>
       </section>
     </main>
   </body>
   <script>var intro=document.getElementById('Intro'); var waveform=document.getElementById('waveform'); var logovid=document.getElementById('logovid'); var body=document.getElementById('body'); var nav=document.getElementsByTagName('nav')[0]; var header=document.getElementsByTagName('header')[0];var scrollelems=document.getElementsByClassName('scroll-effect');var navlist=document.getElementById('nav-menu');function OpenMenu(){navlist.classList.toggle('overflowed');}var imgload=false;window.addEventListener("load", (event)=>{CreateObserver();check();}, false);function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5}; observer=new IntersectionObserver(EffectScroll, options);console.log(observer);for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}imagesLoaded(body,{background: true},()=>{imgload=true;});function check(){if(imgload ){Loaded();}else{setTimeout(check,100);}}; function Loaded(){logovid.classList.remove('none'); logovid.play(); logovid.onended=function(){nav.classList.add('Intro--is--over'); header.classList.add('Intro--is--over'); header.addEventListener("webkitAnimationEnd", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("animationend", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("oanimationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});};};
-var searching = false;var openednav = false;
+	  var searching = false;var openednav = false;
         var sjs = SimpleJekyllSearch({
                  searchInput: document.getElementById('search-input'),
                  resultsContainer: document.getElementById('results-container'),
@@ -122,7 +136,6 @@ function OpenMobileMenu(){
                         document.getElementsByTagName('body')[0].style.overflow = "auto";
                 }
 }
-
   </script>
 </html>
 
