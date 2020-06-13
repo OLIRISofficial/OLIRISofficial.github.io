@@ -107,16 +107,43 @@
       </section>
     </main>
   </body>
-  <script>var intro=document.getElementById('Intro'); var waveform=document.getElementById('waveform'); var logovid=document.getElementById('logovid'); var body=document.getElementById('body'); var nav=document.getElementsByTagName('nav')[0]; var header=document.getElementsByTagName('header')[0];var scrollelems=document.getElementsByClassName('scroll-effect');var navlist=document.getElementById('nav-menu');function OpenMenu(){navlist.classList.toggle('overflowed');}var imgload=false;window.addEventListener("load", (event)=>{CreateObserver();check();}, false);function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5}; observer=new IntersectionObserver(EffectScroll, options);console.log(observer);for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}imagesLoaded(body,{background: true},()=>{imgload=true;});function check(){if(imgload ){Loaded();}else{setTimeout(check,100);}}; function Loaded(){logovid.classList.remove('none'); logovid.play(); logovid.onended=function(){nav.classList.add('Intro--is--over'); header.classList.add('Intro--is--over'); header.addEventListener("webkitAnimationEnd", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("animationend", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("oanimationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});};};
-	  var searching = false;var openednav = false;
+  <script>
+	var intro=document.getElementById('Intro');
+	var waveform=document.getElementById('waveform');
+	var logovid=document.getElementById('logovid');
+	var body=document.getElementById('body');
+	var nav=document.getElementsByTagName('nav')[0];
+	var header=document.getElementsByTagName('header')[0];
+	var scrollelems=document.getElementsByClassName('scroll-effect');
+	var navlist=document.getElementById('nav-menu');
+	function OpenMenu(){navlist.classList.toggle('overflowed');}
+	window.addEventListener("load", (event)=>{CreateObserver();}, false);
+	function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5};
+		observer=new IntersectionObserver(EffectScroll, options);
+		for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}
+	function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}
+	logovid.addEventListener('loadeddata', function() {
+		if ( logovid.readyState === 4 ) {
+			Loaded();
+		}
+	});
+	function Loaded(){
+		logovid.classList.remove('none');
+		logovid.play();
+		logovid.onended=function(){nav.classList.add('Intro--is--over');
+			header.classList.add('Intro--is--over');
+			header.addEventListener("webkitAnimationEnd", function(){body.classList.remove('Intro--is--on');
+		intro.remove();}); 
+		header.addEventListener("animationend", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("oanimationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});};};
+	var searching = false;var openednav = false;
         var sjs = SimpleJekyllSearch({
-                 searchInput: document.getElementById('search-input'),
-                 resultsContainer: document.getElementById('results-container'),
-                 json: '/search.json'
+		searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/search.json'
         })
         function OpenSearch(){
                 searching = !searching;
-	openednav= !openednav;
+		openednav= !openednav;
                 document.getElementById('search').classList.toggle('on');
                 document.getElementById('mobilenav').classList.remove('on');
                 if(searching) {
@@ -125,9 +152,9 @@
                         document.getElementsByTagName('body')[0].style.overflow = "auto";
                 }
         }
-function OpenMobileMenu(){
-	openednav= !openednav;
-                searching = !searching;
+	function OpenMobileMenu(){
+		openednav= !openednav;
+		searching = !searching;
                 document.getElementById('mobilenav').classList.toggle('on');
                 document.getElementById('search').classList.remove('on');
                 if(openednav) {
@@ -135,7 +162,7 @@ function OpenMobileMenu(){
                 }else{
                         document.getElementsByTagName('body')[0].style.overflow = "auto";
                 }
-}
+	}
   </script>
 </html>
 
