@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Intro.css">
+    <link rel="stylesheet" href="Intro.css" media="screen and (min-width:700px)">
     <link rel="stylesheet" href="Pride.css">
     <title>OLIRIS | Home</title>
     <meta name="title" content="OLIRIS | Home">
@@ -116,7 +116,13 @@
 	var scrollelems=document.getElementsByClassName('scroll-effect');
 	var navlist=document.getElementById('nav-menu');
 	function OpenMenu(){navlist.classList.toggle('overflowed');}
-	window.addEventListener("load", (event)=>{CreateObserver();}, false);
+	window.addEventListener("load", (event)=>{
+		CreateObserver();
+		if(window.matchMedia("(max-width: 700px)").matches){
+			console.log("It's A Match")
+			DeleteIntro();
+		 }
+	}, false);
 	function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5};
 		observer=new IntersectionObserver(EffectScroll, options);
 		for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}
@@ -129,17 +135,26 @@
 	function Loaded(){
 		logovid.classList.remove('none');
 		logovid.play();
-		logovid.onended=function(){nav.classList.add('Intro--is--over');
+		logovid.onended=function(){
+			nav.classList.add('Intro--is--over');
 			header.classList.add('Intro--is--over');
-			header.addEventListener("webkitAnimationEnd", function(){body.classList.remove('Intro--is--on');
-		intro.remove();}); 
-		header.addEventListener("animationend", function(){body.classList.remove('Intro--is--on'); intro.remove();}); header.addEventListener("oanimationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});};};
+		}; 
+		header.addEventListener("webkitAnimationEnd", function(){body.classList.remove('Intro--is--on'); intro.remove();});
+		header.addEventListener("animationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});
+		header.addEventListener("oanimationend", function(){body.classList.remove('Intro--is--on'); intro.remove();});
+	}
 	var searching = false;var openednav = false;
         var sjs = SimpleJekyllSearch({
 		searchInput: document.getElementById('search-input'),
                 resultsContainer: document.getElementById('results-container'),
                 json: '/search.json'
         })
+	function DeleteIntro(){
+		body.classList.remove('Intro--is--on'); 
+		nav.classList.add('Intro--is--over');
+		header.classList.add('Intro--is--over');
+		intro.remove();
+	}
         function OpenSearch(){
                 searching = !searching;
 		openednav= !openednav;
