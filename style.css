@@ -334,8 +334,8 @@ background:linear-gradient( to top, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.
 @media only screen and (max-width: 700px) {
 	:root{
 	--text-base-size: 1.2em;
-
-	}.Creation{
+	}
+	.Creation{
 		grid-template-columns:1fr;
 	}
 	.minimenu{
@@ -345,9 +345,12 @@ background:linear-gradient( to top, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.
 	.GoBack{
 		display:none;
 	}
-	  #nav-menu>*,#nav-menu{
-		      display: none;
-		        }
-		}
+	#nav-menu>*,#nav-menu{
+	      display: none;
+	}
+	video {
+		width:100%;
+	}
+}
 
 

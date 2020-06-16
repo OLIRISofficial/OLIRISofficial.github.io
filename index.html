@@ -129,15 +129,11 @@
 	var scrollelems=document.getElementsByClassName('scroll-effect');
 	var navlist=document.getElementById('nav-menu');
 	function OpenMenu(){navlist.classList.toggle('overflowed');}
-	window.addEventListener("load", (event)=>{
-		CreateObserver();
-		if(window.matchMedia("(max-width: 700px)").matches){
-			console.log("It's A Match")
-			DeleteIntro();
-		 }
-	}, false);
+	CreateObserver();
+	Check();
 	function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5};
 		observer=new IntersectionObserver(EffectScroll, options);
+		console.log(observer);
 		for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}
 	function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}
 	logovid.addEventListener('loadeddata', function() {
@@ -149,7 +145,7 @@
 		if (logovid.readyState === 4 ) {
 		       Loaded();
 		}else{
-			setTimeout(check,100);
+			setTimeout(Check,100);
 		}
 	};
 	function Loaded(){
