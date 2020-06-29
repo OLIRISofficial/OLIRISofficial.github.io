@@ -1,31 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-15T18:32:25+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #0</title><link href="http://localhost:4000/2020/06/15/Weekly-Devlog-0.html" rel="alternate" type="text/html" title="Weekly Devlog #0" /><published>2020-06-15T12:00:00+03:00</published><updated>2020-06-15T12:00:00+03:00</updated><id>http://localhost:4000/2020/06/15/Weekly%20Devlog#0</id><content type="html" xml:base="http://localhost:4000/2020/06/15/Weekly-Devlog-0.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Going To Talk About What I’ve Been Doing For The Last Couple Of Weeks And Show The Games’ Current Development State. So Let’s Begin.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T14:48:06+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #1</title><link href="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html" rel="alternate" type="text/html" title="Weekly Devlog #1" /><published>2020-06-29T12:00:00+03:00</published><updated>2020-06-29T12:00:00+03:00</updated><id>http://localhost:4000/2020/06/29/Weekly%20Devlog#1</id><content type="html" xml:base="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.&lt;/p&gt;
+
+&lt;p&gt;First Of All I Have To Apologize All Of You For Not Working Hard These Two Weeks. I Kinda Struggled With My Own Life And Work Balance. Hopefully This Week I Can Work Like I Intended&lt;/p&gt;
+
+&lt;h2 id=&quot;tales-of-war&quot;&gt;Tales Of War&lt;/h2&gt;
+
+&lt;p&gt;I Added Repair System For Buildings. I Used Timer Node Of Godot And Attached A Script That Increases Building’s Health According To An Public Editable Float Variable.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/RepairShowcase.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Tried Adding Fog Of War Using &lt;a href=&quot;https://www.youtube.com/watch?v=VY2I7XdvsMY&quot;&gt;His Idea&lt;/a&gt;. But I Shader Didn’t Worked For Me So I Abandoned That Idea And Started Looking For Other Alternatives For This Problem. I Found Out Godot’s CSG Shape. I Added CSGCombiner Node To The Scene With A Cube Primitive And Added Cylinder Primitive To The Unit Nodes. But Even Though Setting Boolean Operation On Combiner It Didn’t Worked How I Wanted It To. Hopefully This Week I Will Find Something For This Issue.&lt;/p&gt;
+
+&lt;h2 id=&quot;tales-of-heroes&quot;&gt;Tales Of Heroes&lt;/h2&gt;
+
+&lt;p&gt;Fixed Camera Rotation On Third Person View.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/CameraRotationFixTOH.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And That’s Unfortunately It. Again I’m Terribly Sorry About These Two Weeks. See You Next Time Hopefully With More Updates.&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome Back To OLIRIS . Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.</summary></entry><entry><title type="html">Weekly Devlog #0</title><link href="http://localhost:4000/2020/06/15/Weekly-Devlog-0.html" rel="alternate" type="text/html" title="Weekly Devlog #0" /><published>2020-06-15T12:00:00+03:00</published><updated>2020-06-15T12:00:00+03:00</updated><id>http://localhost:4000/2020/06/15/Weekly%20Devlog#0</id><content type="html" xml:base="http://localhost:4000/2020/06/15/Weekly-Devlog-0.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Going To Talk About What I’ve Been Doing For The Last Couple Of Weeks And Show The Games’ Current Development State. So Let’s Begin.&lt;/p&gt;
 
 &lt;h2 id=&quot;tales-of-war&quot;&gt;Tales Of War&lt;/h2&gt;
 
 &lt;p&gt;First Up I Almost Finished Placement System Of The Game. I Set Up A Grid System With Godot’s In Engine 3D Tiles GridMap. Then I Added Boundary System That Changes Building’s Material Depending On If It’s Placeable Or Not.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Placement.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;p&gt;I Re Factored The Selection System To Be More Efficient And Easy To Read.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Selection.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;p&gt;With The Re Factoring Process I Also Fixed A Bug In The UI. The Bug Was If You Clicked Somewhere Empty On The Panels It Would’ve De Select Everything.&lt;/p&gt;
 
 &lt;p&gt;I Also Added Health System With Health Bars On Top Of Units And Buildings. It Still Lacks Design Tho.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/HealthSystem.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;h2 id=&quot;tales-of-heroes&quot;&gt;Tales Of Heroes&lt;/h2&gt;
 
 &lt;p&gt;Now I Started This Project 2 Weeks Ago So The Game Is In A Very Rough State. Please Keep That In Mind.&lt;/p&gt;
 
 &lt;p&gt;Switching Between First Person To Third Person (Please Don’t Mind How The Cross-air Looks.)&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Camswitch.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;p&gt;I Added Ability System Which Makes The Player Do Some Stuff Like Double Jumping, Sliding Left Or Right, Dashing Etc. You Can Active Them With Keyboard Or Pressing The Abilities Button.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Abilities.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;p&gt;I Added Health System With A Health Bar. It Also Lacks Design Too.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/HealthHereos.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-
+&lt;/div&gt;
 &lt;p&gt;And Actually That Was All The Things That I Did For Tales Of Heroes This Week. Hopefully Next Week Will Be More Productive Than This Week.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-i-have-to-do-this-week&quot;&gt;What I Have To Do This Week&lt;/h2&gt;

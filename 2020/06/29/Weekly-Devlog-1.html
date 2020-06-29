@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <title>OLIRIS | Blog</title>
+    <title>OLIRIS | Weekly Devlog #1</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/Pride.css">
-    <meta name="title" content="OLIRIS | Blog">
+    <meta name="title" content="OLIRIS | Weekly Devlog #1">
     <meta name="description" content="An Independent Game And Software Development Company.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://olir.is/">
-    <meta property="og:title" content="OLIRIS | Blog">
+    <meta property="og:title" content="OLIRIS | Weekly Devlog #1">
     <meta property="og:description" content="An Independent Game And Software Development Company.">
     <meta property="og:image" content="/SRC/IMG/Meta.png">
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="http://olir.is/">
-    <meta property="twitter:title" content="OLIRIS | Blog">
+    <meta property="twitter:title" content="OLIRIS | Weekly Devlog #1">
     <meta property="twitter:description" content="An Independent Game And Software Development Company.">
     <meta property="twitter:image" content="/SRC/IMG/Meta.png">
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
     <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
@@ -41,64 +40,66 @@
   <body>
 	  <nav>
 		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
-            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+		  <div class="GoBack">
+			  <a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><a href="/Blog"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></a></div><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+
+</div>
 	   <h1 class="Logo grow"><a href="/">OLIRIS</a></h1>
-	<ul class="icons">
-	   	<li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
-	</ul>
+
+	   <ul class="icons">
+		   <li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
+	   </ul>
     </nav>
-<div id="search">
+    <div id="search">
 	<input type="text" id="search-input" placeholder="Search blog posts..">
 <ul id="results-container"></ul>
     </div>
-<div id="mobilenav">
-	<div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div> <div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+    <div id="mobilenav">
+<a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+<a href="/Blog"><div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div></a><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+</div>
+	
+	    <header style="display:none"></header>
+	<main class="notmargin">
+		
+            <section>
+		<h1>Weekly Devlog #1</h1>
+		<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Welcome Back To <span class="Logo">OLIRIS </span>. Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.</p>
+
+<p>First Of All I Have To Apologize All Of You For Not Working Hard These Two Weeks. I Kinda Struggled With My Own Life And Work Balance. Hopefully This Week I Can Work Like I Intended</p>
+
+<h2 id="tales-of-war">Tales Of War</h2>
+
+<p>I Added Repair System For Buildings. I Used Timer Node Of Godot And Attached A Script That Increases Building’s Health According To An Public Editable Float Variable.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/RepairShowcase.mp4" muted="" controls="" loop=""></video>
 </div>
 
-<main class="notmargin">
-<section>
-    <div class="Posts">
-  
-  <div class="Post scroll-effect scrolled-effect">
-      <h2 ><a href="/2020/06/29/Weekly-Devlog-1.html">Weekly Devlog #1</a></h2>
-      <h5 >29 Jun 2020</h5> 
-      <p>Welcome Back To <span class="Logo">OLIRIS </span>. Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.</p>
+<p>I Tried Adding Fog Of War Using <a href="https://www.youtube.com/watch?v=VY2I7XdvsMY">His Idea</a>. But I Shader Didn’t Worked For Me So I Abandoned That Idea And Started Looking For Other Alternatives For This Problem. I Found Out Godot’s CSG Shape. I Added CSGCombiner Node To The Scene With A Cube Primitive And Added Cylinder Primitive To The Unit Nodes. But Even Though Setting Boolean Operation On Combiner It Didn’t Worked How I Wanted It To. Hopefully This Week I Will Find Something For This Issue.</p>
 
-      <a href="/2020/06/29/Weekly-Devlog-1.html"><h6>Continue Reading ⟶</h6></a>
-  </div>
-  
-  <div class="Post scroll-effect scrolled-effect">
-      <h2 ><a href="/2020/06/15/Weekly-Devlog-0.html">Weekly Devlog #0</a></h2>
-      <h5 >15 Jun 2020</h5> 
-      <p>Welcome Back To <span class="Logo">OLIRIS </span>. Today I Am Going To Talk About What I’ve Been Doing For The Last Couple Of Weeks And Show The Games’ Current Development State. So Let’s Begin.</p>
+<h2 id="tales-of-heroes">Tales Of Heroes</h2>
 
-      <a href="/2020/06/15/Weekly-Devlog-0.html"><h6>Continue Reading ⟶</h6></a>
-  </div>
-  
-  <div class="Post scroll-effect scrolled-effect">
-      <h2 ><a href="/2020/06/06/MyJourneyOfCreatingOLIRIS.html">My Journey Of Creating OLIRIS</a></h2>
-      <h5 >06 Jun 2020</h5> 
-      <p>Welcome To <span class="Logo">OLIRIS </span> Everyone. This Is Me The Creator Of This Site And In This Post I Would Like To Share My Thoughts On My Journey Of Creating <span class="Logo">OLIRIS </span>.</p>
+<p>Fixed Camera Rotation On Third Person View.</p>
 
-      <a href="/2020/06/06/MyJourneyOfCreatingOLIRIS.html"><h6>Continue Reading ⟶</h6></a>
-  </div>
-  
-    </div>
-    <div class="rss scroll-effect scrolled-effect">
-	<h3>Do You Have A RSS Reader ?</h3>
-	<p>Subscribe <a href="/feed.xml">via RSS</a></p>
-</div>	
-	<div class="patreon scroll-effect scrolled-effect">
-		<h3>Would You Like To Play A Different Game Every Month ?</h3>
-		<a href="https://www.patreon.com/OLIRISofficial"><p>To Learn More Go To Patreon ⟶</p></a>
-	</div>
-</section>
-</main>
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/CameraRotationFixTOH.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>And That’s Unfortunately It. Again I’m Terribly Sorry About These Two Weeks. See You Next Time Hopefully With More Updates.</p>
+
+  </div><a class="u-url" href="/2020/06/29/Weekly-Devlog-1.html" hidden></a>
+</article>
+
+            </section>
+    </main>
+
       </body>
-       <script>
-	       var scrollelems=document.getElementsByClassName('scroll-effect');
-window.addEventListener("load", (event)=>{CreateObserver();check();}, false);function CreateObserver(){let observer; let options={root: null, rootMargin: "0px", threshold:0.5}; observer=new IntersectionObserver(EffectScroll, options);console.log(observer);for (i=0;i < scrollelems.length;i++){observer.observe(scrollelems[i]);};}function EffectScroll (entries, observer){entries.forEach((entry)=>{if (entry.isIntersecting){entry.target.classList.remove('scrolled-effect');}})}
-var searching = false;var openednav = false;
+      <script>
+      var searching = false;var openednav = false;
         var sjs = SimpleJekyllSearch({
                  searchInput: document.getElementById('search-input'),
                  resultsContainer: document.getElementById('results-container'),
@@ -127,4 +128,4 @@ function OpenMobileMenu(){
                 }
 }
       </script>
-</html>
+ </html>
