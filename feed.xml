@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-06-29T14:48:06+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #1</title><link href="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html" rel="alternate" type="text/html" title="Weekly Devlog #1" /><published>2020-06-29T12:00:00+03:00</published><updated>2020-06-29T12:00:00+03:00</updated><id>http://localhost:4000/2020/06/29/Weekly%20Devlog#1</id><content type="html" xml:base="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-06T09:19:14+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #2</title><link href="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html" rel="alternate" type="text/html" title="Weekly Devlog #2" /><published>2020-07-06T09:00:00+03:00</published><updated>2020-07-06T09:00:00+03:00</updated><id>http://localhost:4000/2020/07/06/Weekly%20Devlog#2</id><content type="html" xml:base="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.&lt;/p&gt;
+
+&lt;p&gt;But Before We Begin I Would Like To Title This Week As One Of My Most Productive Weeks Of Last Month(June).&lt;/p&gt;
+
+&lt;h2 id=&quot;tales-of-war&quot;&gt;Tales Of War&lt;/h2&gt;
+
+&lt;p&gt;I Fixed A Bug With Deployment Buttons. Before If You Were Holding An Building And Pressed One Of The Buttons The Building Would’ve Left In The Scene.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/DeployBtnFix.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Added An Visual Way Of Telling Which Gmae Mode You Are Currently In (I’m Talking About Selling And Repair) It’s Just An Rect That Changes It’s Border Colors To Yellow Or Blue But It’s Still Something. Also I Fixed A Bug Involved In Cycling Between The Game Modes.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/GamemodeUI.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;tales-of-heroes&quot;&gt;Tales Of Heroes&lt;/h2&gt;
+
+&lt;p&gt;I Finally Added Requirements System To The Abilities. In The Current State I Don’t It’s Well Optimized Hopefully I Will Make It More Optimized In The Upcoming Weeks.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/Requirements.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Fixed Dashing. Before Dashing Was Limited On The Global X Axis. Now You Should Dash Through Where You Are Facing.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/DashingFix.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Added An Ability Of Spawning A Platform Underneath You.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/PlatformAbility.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also I Fixed A Bug In Abilities’ Buttons. Before If You Switched To Another Weapon, The Abilities Weren’t Able To Remember Their Cooldown. Now They Should Remember How Many Time Left And Show It Accordingly On Their Buttons.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/CooldownFix.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Also Added The Foundation Of Shooting And Secondary Ability Of The Weapons (I Can’t Demonstrate Them Now But Keep Your Eyes On The Next Week)&lt;/p&gt;
+
+&lt;h2 id=&quot;next-week&quot;&gt;Next Week&lt;/h2&gt;
+
+&lt;p&gt;I’m Planning On 3D Assets (Finally!) Because There Is Nothing Much Left On Coding For Now Except For A Proper Inventory System For Tales Of Heroes.&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome Back To OLIRIS . Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.</summary></entry><entry><title type="html">Weekly Devlog #1</title><link href="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html" rel="alternate" type="text/html" title="Weekly Devlog #1" /><published>2020-06-29T12:00:00+03:00</published><updated>2020-06-29T12:00:00+03:00</updated><id>http://localhost:4000/2020/06/29/Weekly%20Devlog#1</id><content type="html" xml:base="http://localhost:4000/2020/06/29/Weekly-Devlog-1.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Going To Talk About What I’ve Been Doing For Last Two Weeks And Show You The Current State Of The Games That I’m Working On.&lt;/p&gt;
 
 &lt;p&gt;First Of All I Have To Apologize All Of You For Not Working Hard These Two Weeks. I Kinda Struggled With My Own Life And Work Balance. Hopefully This Week I Can Work Like I Intended&lt;/p&gt;
 

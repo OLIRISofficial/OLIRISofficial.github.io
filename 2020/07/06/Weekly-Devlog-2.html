@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>OLIRIS | Weekly Devlog #2</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Pride.css">
+    <meta name="title" content="OLIRIS | Weekly Devlog #2">
+    <meta name="description" content="An Independent Game And Software Development Company.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://olir.is/">
+    <meta property="og:title" content="OLIRIS | Weekly Devlog #2">
+    <meta property="og:description" content="An Independent Game And Software Development Company.">
+    <meta property="og:image" content="/SRC/IMG/Meta.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://olir.is/">
+    <meta property="twitter:title" content="OLIRIS | Weekly Devlog #2">
+    <meta property="twitter:description" content="An Independent Game And Software Development Company.">
+    <meta property="twitter:image" content="/SRC/IMG/Meta.png">
+    <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/SRC/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/SRC/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/SRC/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/SRC/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/SRC/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/SRC/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/SRC/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/SRC/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/SRC/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/SRC/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/SRC/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/SRC/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="/SRC/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+  </head>
+  <body>
+	  <nav>
+		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
+		  <div class="GoBack">
+			  <a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><a href="/Blog"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></a></div><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+
+</div>
+	   <h1 class="Logo grow"><a href="/">OLIRIS</a></h1>
+
+	   <ul class="icons">
+		   <li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
+	   </ul>
+    </nav>
+    <div id="search">
+	<input type="text" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+    </div>
+    <div id="mobilenav">
+<a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+<a href="/Blog"><div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div></a><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+</div>
+	
+	    <header style="display:none"></header>
+	<main class="notmargin">
+		
+            <section>
+		<h1>Weekly Devlog #2</h1>
+		<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Welcome Back To <span class="Logo">OLIRIS </span>. Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.</p>
+
+<p>But Before We Begin I Would Like To Title This Week As One Of My Most Productive Weeks Of Last Month(June).</p>
+
+<h2 id="tales-of-war">Tales Of War</h2>
+
+<p>I Fixed A Bug With Deployment Buttons. Before If You Were Holding An Building And Pressed One Of The Buttons The Building Would’ve Left In The Scene.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/DeployBtnFix.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>I Added An Visual Way Of Telling Which Gmae Mode You Are Currently In (I’m Talking About Selling And Repair) It’s Just An Rect That Changes It’s Border Colors To Yellow Or Blue But It’s Still Something. Also I Fixed A Bug Involved In Cycling Between The Game Modes.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/GamemodeUI.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<h2 id="tales-of-heroes">Tales Of Heroes</h2>
+
+<p>I Finally Added Requirements System To The Abilities. In The Current State I Don’t It’s Well Optimized Hopefully I Will Make It More Optimized In The Upcoming Weeks.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/Requirements.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>I Fixed Dashing. Before Dashing Was Limited On The Global X Axis. Now You Should Dash Through Where You Are Facing.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/DashingFix.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>I Added An Ability Of Spawning A Platform Underneath You.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/PlatformAbility.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>Also I Fixed A Bug In Abilities’ Buttons. Before If You Switched To Another Weapon, The Abilities Weren’t Able To Remember Their Cooldown. Now They Should Remember How Many Time Left And Show It Accordingly On Their Buttons.</p>
+
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/CooldownFix.mp4" muted="" controls="" loop=""></video>
+</div>
+
+<p>I Also Added The Foundation Of Shooting And Secondary Ability Of The Weapons (I Can’t Demonstrate Them Now But Keep Your Eyes On The Next Week)</p>
+
+<h2 id="next-week">Next Week</h2>
+
+<p>I’m Planning On 3D Assets (Finally!) Because There Is Nothing Much Left On Coding For Now Except For A Proper Inventory System For Tales Of Heroes.</p>
+
+  </div><a class="u-url" href="/2020/07/06/Weekly-Devlog-2.html" hidden></a>
+</article>
+
+            </section>
+    </main>
+
+      </body>
+      <script>
+      var searching = false;var openednav = false;
+        var sjs = SimpleJekyllSearch({
+                 searchInput: document.getElementById('search-input'),
+                 resultsContainer: document.getElementById('results-container'),
+                 json: '/search.json'
+        })
+        function OpenSearch(){
+                searching = !searching;
+	openednav= !openednav;
+                document.getElementById('search').classList.toggle('on');
+                document.getElementById('mobilenav').classList.remove('on');
+                if(searching) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+        }
+function OpenMobileMenu(){
+	openednav= !openednav;
+                searching = !searching;
+                document.getElementById('mobilenav').classList.toggle('on');
+                document.getElementById('search').classList.remove('on');
+                if(openednav) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+}
+      </script>
+ </html>
