@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>OLIRIS | Weekly Devlog #3</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/Pride.css">
+    <meta name="title" content="OLIRIS | Weekly Devlog #3">
+    <meta name="description" content="An Independent Game And Software Development Company.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://olir.is/">
+    <meta property="og:title" content="OLIRIS | Weekly Devlog #3">
+    <meta property="og:description" content="An Independent Game And Software Development Company.">
+    <meta property="og:image" content="/SRC/IMG/Meta.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://olir.is/">
+    <meta property="twitter:title" content="OLIRIS | Weekly Devlog #3">
+    <meta property="twitter:description" content="An Independent Game And Software Development Company.">
+    <meta property="twitter:image" content="/SRC/IMG/Meta.png">
+    <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/SRC/Favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/SRC/Favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/SRC/Favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/SRC/Favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/SRC/Favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/SRC/Favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/SRC/Favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/SRC/Favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/SRC/Favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/SRC/Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/SRC/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/SRC/Favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/SRC/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/SRC/Favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="/SRC/Favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+  </head>
+  <body>
+	  <nav>
+		  <div onclick="OpenMobileMenu()" class="minimenu"><img src="/SRC/Icons/Nav.svg" alt=""></div>
+		  <div class="GoBack">
+			  <a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+            <div onclick="OpenMenu()" id="nav-menu"> <div class="nav-button"><a href="/Blog"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></a></div><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button not-available"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div><div class="Shadow-to-bottom"></div></div>
+
+</div>
+	   <h1 class="Logo grow"><a href="/">OLIRIS</a></h1>
+
+	   <ul class="icons">
+		   <li onclick="OpenSearch()"><img src="/SRC/Icons/Search.svg" alt=""></li>
+	   </ul>
+    </nav>
+    <div id="search">
+	<input type="text" id="search-input" placeholder="Search blog posts..">
+<ul id="results-container"></ul>
+    </div>
+    <div id="mobilenav">
+<a onclick="window.history.back()"><div style="cursor:pointer;margin-left:15px;width: min-content;display: flex;flex-direction: row;height: 60px;align-items: center;" ><img SRC="/SRC/Icons/Back.svg" style="width: 30px;height: 30px;margin-right: 15px;"><p style="width: max-content;font-size:20px;">Go Back</p></div></a>
+<a href="/Blog"><div class="nav-button"><li ><img SRC="/SRC/Icons/Pen.svg" >Blog</li></div></a><div class="nav-button"><a href="/"> <li><img SRC="/SRC/Icons/Home.svg" >Home</li></div></a><div class="nav-button"><li ><img SRC="/SRC/Icons/Misc.4.svg" >Miscellaneous</li></div><div class="nav-button"><li ><img SRC="/SRC/Icons/Clock.svg" >/Now</li></div>
+</div>
+	
+	    <header style="display:none"></header>
+	<main class="notmargin">
+		
+            <section>
+		<h1>Weekly Devlog #3</h1>
+		<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Welcome Back To <span class="Logo">OLIRIS </span>. Today I Am Here To Show You What I Was Up To This Week And Show You The Current State Of My Games.</p>
+
+<h2 id="what-have-i-been-doing">What Have I Been Doing</h2>
+<p>If You Have Noticed There Wasn’t A Devlog Last Week, The Reason Was I Joined The GMTK Game Jam. It Was 2 Days Long Jam And The Theme Was Out Of Control. Here Is Submisson To The Jam <a href="Stay Alive But Random">https://oliris.itch.io/stay-alive-but-random</a></p>
+<h2 id="tales-of-war">Tales Of War</h2>
+<p>I Was Only Able To Fix A Bug That Involved With Miscelenious Buildings(Power Plants, Civilian Buildings, Etc.) Which When Selected They Were Able To Open The Panel. And Since They Don’t Have Anyhting To Deploy The Panel Was Empty. Now This Is All Fixed And Maybe In The Future I Will Update The Panel To Show More Information About The Building That’s Currently Selected (Which I Am Planning A New UI For The Game)</p>
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/Panel.webm" muted="" controls="" loop=""></video>
+</div>
+
+<h2 id="tales-of-heroes">Tales Of Heroes</h2>
+<p>I Finally Started Implementing The Invontory. Currently It Only Shows The All Avalible Abilities And Decks Of The Player. And For Now You Can Only Create Empty Decks.
+The Way You Open The Inventory Is By Holding Down “~” Key.</p>
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/Inventory.webm" muted="" controls="" loop=""></video>
+</div>
+<p>I Added Shooting In The Game But It’s In Very Rough State.</p>
+
+<p>I Also Added The First Enemy But Since It’s The First Implemention It’s Very Rough. It Only Detects The Player, Follows And Shoot.</p>
+
+<p>And Finally I Added An Attack Indicator But It Doesn’t Correctly Show Where The Player Get Hit. Hopefully Next Week I Will Fix It.</p>
+<div style="text-align:center;">
+<video SRC="/SRC/Video/Posts/Enemy.webm" muted="" controls="" loop=""></video>
+</div>
+
+  </div><a class="u-url" href="/2020/07/20/Weekly-Devlog-3.html" hidden></a>
+</article>
+
+            </section>
+    </main>
+
+      </body>
+      <script>
+      var searching = false;var openednav = false;
+        var sjs = SimpleJekyllSearch({
+                 searchInput: document.getElementById('search-input'),
+                 resultsContainer: document.getElementById('results-container'),
+                 json: '/search.json'
+        })
+        function OpenSearch(){
+                searching = !searching;
+	openednav= !openednav;
+                document.getElementById('search').classList.toggle('on');
+                document.getElementById('mobilenav').classList.remove('on');
+                if(searching) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+        }
+function OpenMobileMenu(){
+	openednav= !openednav;
+                searching = !searching;
+                document.getElementById('mobilenav').classList.toggle('on');
+                document.getElementById('search').classList.remove('on');
+                if(openednav) {
+                        document.getElementsByTagName('body')[0].style.overflow = "hidden";
+                }else{
+                        document.getElementsByTagName('body')[0].style.overflow = "auto";
+                }
+}
+      </script>
+ </html>
