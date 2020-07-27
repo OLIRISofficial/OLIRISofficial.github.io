@@ -1,9 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-20T10:34:56+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #3</title><link href="http://localhost:4000/2020/07/20/Weekly-Devlog-3.html" rel="alternate" type="text/html" title="Weekly Devlog #3" /><published>2020-07-20T06:00:00+03:00</published><updated>2020-07-20T06:00:00+03:00</updated><id>http://localhost:4000/2020/07/20/Weekly%20Devlog#3</id><content type="html" xml:base="http://localhost:4000/2020/07/20/Weekly-Devlog-3.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-27T13:43:24+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">OLIRIS | Home</title><entry><title type="html">Weekly Devlog #4</title><link href="http://localhost:4000/2020/07/27/Weekly-Devlog-4.html" rel="alternate" type="text/html" title="Weekly Devlog #4" /><published>2020-07-27T06:00:00+03:00</published><updated>2020-07-27T06:00:00+03:00</updated><id>http://localhost:4000/2020/07/27/Weekly%20Devlog#4</id><content type="html" xml:base="http://localhost:4000/2020/07/27/Weekly-Devlog-4.html">&lt;p&gt;Hello Guys And Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Week And Show You The Current State Of My Games. But Before We Begin Let Me Tell You Beginning Of This Week Was AMAZING But At The End It Got Dark. Classic 2020 Week It’s Nothing Special. Anyways Let’s Begin The Devlog&lt;/p&gt;
+
+&lt;p&gt;BTW I’m Sorry I Wasn’t Able To Edit The Videos So They Are Out Of Size And Unoptimesed&lt;/p&gt;
+
+&lt;h2 id=&quot;tales-of-war&quot;&gt;Tales Of War&lt;/h2&gt;
+&lt;p&gt;This Week I Implemented Two Left Clicking On A Unit To Select Across  The Screen.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/SelectAll.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+&lt;p&gt;And I Fixed Another Bug On The Deployment Depertment. It Should Use Less Memory Now.&lt;/p&gt;
+
+&lt;h2 id=&quot;tales-of-heroes&quot;&gt;Tales Of Heroes&lt;/h2&gt;
+&lt;p&gt;I Finished Inventory. You Can Rearange The Deck, Duplicate Them, Delete And Add New Decks.
+There Is Also Prefab Decks That Are Preconfigured And Ready To Add To Your Current Deck Collection.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/InventoryAllDone.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I Added A Label That Tells You Why You Were’nt Able To Use An Ability.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+&lt;video SRC=&quot;/SRC/Video/Posts/Label.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
+&lt;/div&gt;
+&lt;p&gt;I Also Changed The Requirements System Of The Abilities. It Should Function Properly Now.&lt;/p&gt;</content><author><name></name></author><summary type="html">Hello Guys And Welcome Back To OLIRIS . Today I Am Here To Show You What I Was Up To This Week And Show You The Current State Of My Games. But Before We Begin Let Me Tell You Beginning Of This Week Was AMAZING But At The End It Got Dark. Classic 2020 Week It’s Nothing Special. Anyways Let’s Begin The Devlog</summary></entry><entry><title type="html">Weekly Devlog #3</title><link href="http://localhost:4000/2020/07/20/Weekly-Devlog-3.html" rel="alternate" type="text/html" title="Weekly Devlog #3" /><published>2020-07-20T06:00:00+03:00</published><updated>2020-07-20T06:00:00+03:00</updated><id>http://localhost:4000/2020/07/20/Weekly%20Devlog#3</id><content type="html" xml:base="http://localhost:4000/2020/07/20/Weekly-Devlog-3.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Week And Show You The Current State Of My Games.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-have-i-been-doing&quot;&gt;What Have I Been Doing&lt;/h2&gt;
 &lt;p&gt;If You Have Noticed There Wasn’t A Devlog Last Week, The Reason Was I Joined The GMTK Game Jam. It Was 2 Days Long Jam And The Theme Was Out Of Control. Here Is Submisson To The Jam &lt;a href=&quot;Stay Alive But Random&quot;&gt;https://oliris.itch.io/stay-alive-but-random&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;tales-of-war&quot;&gt;Tales Of War&lt;/h2&gt;
-&lt;p&gt;I Was Only Able To Fix A Bug That Involved With Miscelenious Buildings(Power Plants, Civilian Buildings, Etc.) Which When Selected They Were Able To Open THe Panel. And Since They Don’t Have Anyhting To Deploy The Panel Was Empty. Now This Is All Fixed And Maybe In The Future I Will Update The Panel To Show More Information About The Building That’s Currently Selected (Which I Am Planning A New UI For The Game)&lt;/p&gt;
+&lt;p&gt;I Was Only Able To Fix A Bug That Involved With Miscelenious Buildings(Power Plants, Civilian Buildings, Etc.) Which When Selected They Were Able To Open The Panel. And Since They Don’t Have Anyhting To Deploy The Panel Was Empty. Now This Is All Fixed And Maybe In The Future I Will Update The Panel To Show More Information About The Building That’s Currently Selected (Which I Am Planning A New UI For The Game)&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Panel.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
 &lt;/div&gt;
@@ -16,12 +38,12 @@ The Way You Open The Inventory Is By Holding Down “~” Key.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;I Added Shooting In The Game But It’s In Very Rough State.&lt;/p&gt;
 
-&lt;p&gt;I Also Added The First Enemy It’s In A Very Rough State Now. It Only Folllows The Player If It Detects It And Shoot.&lt;/p&gt;
+&lt;p&gt;I Also Added The First Enemy But Since It’s The First Implemention It’s Very Rough. It Only Detects The Player, Follows And Shoot.&lt;/p&gt;
 
-&lt;p&gt;And Finally I Added Attack Indicator But Let’s Just Say It’s Going Through Something. Hopefully Next Week I Can Fix It.&lt;/p&gt;
+&lt;p&gt;And Finally I Added An Attack Indicator But It Doesn’t Correctly Show Where The Player Get Hit. Hopefully Next Week I Will Fix It.&lt;/p&gt;
 &lt;div style=&quot;text-align:center;&quot;&gt;
 &lt;video SRC=&quot;/SRC/Video/Posts/Enemy.mp4&quot; muted=&quot;&quot; controls=&quot;&quot; loop=&quot;&quot;&gt;&lt;/video&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">Welcome Back To OLIRIS . Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.</summary></entry><entry><title type="html">Weekly Devlog #2</title><link href="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html" rel="alternate" type="text/html" title="Weekly Devlog #2" /><published>2020-07-06T09:00:00+03:00</published><updated>2020-07-06T09:00:00+03:00</updated><id>http://localhost:4000/2020/07/06/Weekly%20Devlog#2</id><content type="html" xml:base="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.&lt;/p&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">Welcome Back To OLIRIS . Today I Am Here To Show You What I Was Up To This Week And Show You The Current State Of My Games.</summary></entry><entry><title type="html">Weekly Devlog #2</title><link href="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html" rel="alternate" type="text/html" title="Weekly Devlog #2" /><published>2020-07-06T09:00:00+03:00</published><updated>2020-07-06T09:00:00+03:00</updated><id>http://localhost:4000/2020/07/06/Weekly%20Devlog#2</id><content type="html" xml:base="http://localhost:4000/2020/07/06/Weekly-Devlog-2.html">&lt;p&gt;Welcome Back To &lt;span class=&quot;Logo&quot;&gt;OLIRIS &lt;/span&gt;. Today I Am Here To Show You What I Was Up To This Last Week And Show You The Current Process Of My Games.&lt;/p&gt;
 
 &lt;p&gt;But Before We Begin I Would Like To Title This Week As One Of My Most Productive Weeks Of Last Month(June).&lt;/p&gt;
 
